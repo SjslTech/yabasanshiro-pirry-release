@@ -44,8 +44,8 @@ Measured on R36S (dArkOS) in performance mode (CPU 1512 MHz · GPU 600 MHz · RA
 | DoDonPachi (Japan) | 59.5 | 60.5 |
 | Dragon Ball Z - The Legend (English v1.01) | 58.9 | 29.9 |
 | DRAGON_FORCE | 59.7 | 30.4 |
-| Dungeons & Dragons Collection (Japan) (Tower of Doom) | 59.9 | 60.9 |
 | Dungeons & Dragons Collection (Japan) (Tower of Doom) | 59.8 | 59.4 |
+| Dungeons & Dragons Collection (Japan) (Tower of Doom) | 59.9 | 60.9 |
 | Elevator Action^2 - Returns (Japan) | 60 | - |
 | Enemy Zero (Europe) — **BIOS NEEDED · multi-disc** | 60.0 | 27.6 |
 | Exhumed (Europe) (En,Fr,De,Es) | 60.2 | 30.8 |
@@ -60,6 +60,7 @@ Measured on R36S (dArkOS) in performance mode (CPU 1512 MHz · GPU 600 MHz · RA
 | Guardian Heroes (Europe) | 59.7 | 48.6 |
 | High Velocity - Mountain Racing Challenge (USA) | 59.9 | 20.4 |
 | Highway 2000 (Europe) | 59.2 | 30.2 |
+| House of the Dead, The (Europe) | 49 | 25 |
 | Hyper Duel (Japan) | 59.7 | 60.7 |
 | In the Hunt (USA) | 59.4 | 59.0 |
 | Keio Flying Squadron 2 (Europe) | 59.9 | 60.8 |
@@ -69,6 +70,7 @@ Measured on R36S (dArkOS) in performance mode (CPU 1512 MHz · GPU 600 MHz · RA
 | Last Bronx (E) | 34.0 | 35.3 |
 | Layer Section (J) | 58.3 | 59.3 |
 | Layer Section II (Japan) | 58.3 | 59.3 |
+| Linkle Liver Story (Japan) (T-En by Aishsha v1.0) — **needs the SCU indirect-DMA fix (next release); black screen in 1010** | 60 | 31 |
 | Magic Knight Rayearth (USA) | 59.7 | 60.5 |
 | Magical Night Dreams - Cotton Boomerang (Japan) | 59.8 | 60.8 |
 | Marvel Super Heroes (Europe) | 58.9 | 59.9 |
@@ -121,6 +123,9 @@ Measured on R36S (dArkOS) in performance mode (CPU 1512 MHz · GPU 600 MHz · RA
 | Vampire Savior (English) | 59.5 | 60.5 |
 | Vandal Hearts - Ushinawareta Kodai Bunmei (English v1.5) — **BIOS NEEDED** | 60 | 46 |
 | Victory Boxing (Europe) | 54.2 | 49.2 |
+| Virtua Cop (Europe) (2S) — **drops to ~27 FPS when zooming in on enemies; fixed in the next release (texture atlas)** | 27 | 14 |
+| Virtua Cop 2 (Europe) | 59 | 30 |
+| Virtua Cop 2 (USA) | 54 | 28 |
 | Virtua Fighter 2 (Europe) (Rev A) (Made in EU) | 50.9 | 52.0 |
 | Virtua Fighter Remix (Europe) | 59.5 | 30.2 |
 | Winter Heat (Europe) | 60.1 | 61.1 |
