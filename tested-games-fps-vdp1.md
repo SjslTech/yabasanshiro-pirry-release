@@ -13,7 +13,7 @@ Measured on R36S (dArkOS) in performance mode (CPU 1512 MHz · GPU 600 MHz · RA
 | Baku Baku Animal - World Zookeeper Contest (Europe) | 52 | 54 |
 | Batman Forever - The Arcade Game (Europe) | 59.7 | 54.9 |
 | Batsugun (Japan) | 60 | - |
-| Battle Arena Toshinden URA - Ultimate Revenge Attack (Europe — **faster with Interlace setting: 43.6 FPS** | 39.2 | 21.9 |
+| Battle Arena Toshinden URA - Ultimate Revenge Attack (Europe) | 47 | 24 |
 | Battle Garegga (Japan) | 59.2 | 60.2 |
 | Battle Monsters (Europe) | 59.6 | 54.1 |
 | Blast Wind (English) | 60 | - |
@@ -32,7 +32,7 @@ Measured on R36S (dArkOS) in performance mode (CPU 1512 MHz · GPU 600 MHz · RA
 | Cotton 2 (English v0.9) | 59.6 | 60.7 |
 | Crimewave (Europe) (EnFrDeEsIt) | 57.2 | 29.2 |
 | Culdcept (Japan) (Rev B) (20M) | 60 | 61 |
-| D-Xhird (Japan) (2M) — **faster with Interlace setting: 45.1 FPS** | 40.8 | 22.5 |
+| D-Xhird (Japan) (2M) | 50 | 25.5 |
 | Darius Gaiden (Europe) | 59.5 | 38.8 |
 | Darius II (Europe) | 59.2 | 60.6 |
 | Dark Legend (USA) | 59.4 | 54.3 |
@@ -70,7 +70,7 @@ Measured on R36S (dArkOS) in performance mode (CPU 1512 MHz · GPU 600 MHz · RA
 | Last Bronx (E) | 34.0 | 35.3 |
 | Layer Section (J) | 58.3 | 59.3 |
 | Layer Section II (Japan) | 58.3 | 59.3 |
-| Linkle Liver Story (Japan) (T-En by Aishsha v1.0) — **needs the SCU indirect-DMA fix (next release); black screen in 1010** | 60 | 31 |
+| Linkle Liver Story (Japan) (T-En by Aishsha v1.0) | 60 | 31 |
 | Magic Knight Rayearth (USA) | 59.7 | 60.5 |
 | Magical Night Dreams - Cotton Boomerang (Japan) | 59.8 | 60.8 |
 | Marvel Super Heroes (Europe) | 58.9 | 59.9 |
