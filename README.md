@@ -185,7 +185,8 @@ open an issue with the game name and what happens.
 yabasanshiro-pirry is based on **Yaba Sanshiro** by devMiyax and on
 **Yabause**, and is licensed under the **GNU General Public License v2**.
 
-**The complete source code of this build is available on request** 
-(will be published soon)
-
 All credit for the original emulator goes to devMiyax and the Yabause team.
+
+## SOURCE CODE
+
+https://github.com/pirrypirrypirry/yabasanshiro-pirry
