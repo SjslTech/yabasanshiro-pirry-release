@@ -123,7 +123,7 @@ Measured on R36S (dArkOS) in performance mode (CPU 1512 MHz · GPU 600 MHz · RA
 | Vampire Savior (English) | 59.5 | 60.5 |
 | Vandal Hearts - Ushinawareta Kodai Bunmei (English v1.5) — **BIOS NEEDED** | 60 | 46 |
 | Victory Boxing (Europe) | 54.2 | 49.2 |
-| Virtua Cop (Europe) (2S) — **drops to ~27 FPS when zooming in on enemies; fixed in the next release (texture atlas)** | 27 | 14 |
+| Virtua Cop (Europe) (2S) | 59 | 30 |
 | Virtua Cop 2 (Europe) | 59 | 30 |
 | Virtua Cop 2 (USA) | 54 | 28 |
 | Virtua Fighter 2 (Europe) (Rev A) (Made in EU) | 50.9 | 52.0 |
