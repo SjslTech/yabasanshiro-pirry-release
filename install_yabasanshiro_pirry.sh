@@ -27,7 +27,13 @@ chmod +x "$DEST_BIN"
 ok "Emulator installed in $DEST_BIN"
 
 # ---------- Step 2: backups ----------
+
 step "Step 2/5: Backing up configuration files"
+if [ -f "$SATURN_SH.backup" ]; then
+  step "Restoring clean saturn.sh from backup"
+  cp -p "$SATURN_SH.backup" "$SATURN_SH" || fail "Could not restore saturn.sh"
+  ok "Original saturn.sh restored"
+fi
 [ -f "$SATURN_SH" ] || fail "$SATURN_SH not found"
 [ -f "$ES_CFG" ]    || fail "$ES_CFG not found"
 [ -f "$SATURN_SH.backup" ] || cp -p "$SATURN_SH" "$SATURN_SH.backup"
