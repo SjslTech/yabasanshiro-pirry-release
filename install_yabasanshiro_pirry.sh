@@ -36,39 +36,36 @@ ok "Backups ready (*.backup)"
 
 # ---------- Step 3: patch saturn.sh ----------
 step "Step 3/5: Patching $SATURN_SH"
-if grep -q 'pirry' "$SATURN_SH"; then
+if grep -q 'YABA_BIN' "$SATURN_SH"; then
   echo "saturn.sh already patched, skipping."
   sleep 1
 else
-  PATCH_FILE="$(mktemp)"
-  cat > "$PATCH_FILE" <<'EOF'
-  elif [[ $1 == *"pirry"* ]]; then
-    YABA_BIN="./yabasanshiro-pirry"
-    if [[ ! -d "/$directory/saturn/yabasanshiro-pirry" ]]; then
-      mkdir /$directory/saturn/yabasanshiro-pirry
-    fi
-EOF
-  # Insert the new branch before the first "elif" following the standalone test
-  awk -v patch="$PATCH_FILE" '
-    /if \[\[ \$1 == \*"standalone"\* \]\]/ { seen=1 }
-    seen && !done && /^[[:space:]]*elif \[\[ \$1 ==/ {
-      while ((getline line < patch) > 0) print line
-      done=1
+  awk '
+    /if \[\[ ! -d "\/\$directory\/saturn\/yabasanshiro" \]\]/ {
+      print "if [[ $1 == *\"pirry\"* ]]; then"
+      print "    YABA_BIN=\"/opt/yabasanshiro/yabasanshiro-pirry\""
+      print "    [[ ! -d \"/\$directory/saturn/yabasanshiro-pirry\" ]] && mkdir /\$directory/saturn/yabasanshiro-pirry"
+      print "else"
+      print "    YABA_BIN=\"./yabasanshiro\""
+      print "    [[ ! -d \"/\$directory/saturn/yabasanshiro\" ]] && mkdir /\$directory/saturn/yabasanshiro"
+      print "fi"
+      skip=2
+      next
     }
-    { print }
-    END { if (!done) exit 3 }
+    skip > 0 { skip--; next }
+    {
+      gsub(/\.\/yabasanshiro/, "\"$YABA_BIN\"")
+      print
+    }
   ' "$SATURN_SH.backup" > "$SATURN_SH.new" \
-    || { rm -f "$PATCH_FILE" "$SATURN_SH.new"; fail "Could not find the standalone block in saturn.sh"; }
-  rm -f "$PATCH_FILE"
+    || { rm -f "$SATURN_SH.new"; fail "Could not patch saturn.sh"; }
+
   mv "$SATURN_SH.new" "$SATURN_SH"
   chmod +x "$SATURN_SH"
-  ok "Added the pirry branch"
+  ok "Patched $SATURN_SH with YABA_BIN configuration"
 
   # Skip the BIOS warning for this build
-  sed -i 's|if \[\[ ! -f "/\$directory/bios/saturn_bios.bin" \]\]|& \&\& [[ $1 != *"pirry"* ]]|' "$SATURN_SH"
-  grep -q 'saturn_bios.bin" \]\] && \[\[ \$1 != \*"pirry"\* \]\]' "$SATURN_SH" \
-    && ok "BIOS check updated" \
-    || echo "[WARN] BIOS check line not found, please edit it manually"
+  sed -i 's|if [[ ! -f "/\$directory/bios/saturn_bios.bin" ]]||& \&\& [[ $1 != *"pirry"* ]]|' "$SATURN_SH"
   sleep 1
 fi
 
